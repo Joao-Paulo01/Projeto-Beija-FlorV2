@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"> 
+    <title>Projeto Beija Flor - Transparência</title>
+</head>
+<body>
+    <!-- HEADER --> 
+    <header id="header">  
+        <div class="container">
+ 
+            <div class="flex">
+
+                <a href="#"><img src="../img/LogoNovaV1.png" class="logo" id="logo"></a>
+
+                <nav>
+                <img onclick="menuShow()" src="../img/menu_white_24dp.svg" class="menu">
+
+                    <ul class="menu-lista-1">
+                        <li class="home"><a href="../Home/index.html">Home</a></li>
+                        <li class="instituicional"><a href="../Intitucional/index.html">Institucional</a></li>
+                        <li class="transparencia"><a href="../Transparencias/index.html">Transparências</a></li>
+                        <li class="sejaColaborador"><a href="../Seja Colaborador/index.html">Seja Colaborador</a></li>
+                        <li class="contato"><a href="../Contato/index.html">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu">
+        <ul class="menu-lista-2" id="mobile">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Institucional</a></li>
+            <li><a href="#">Transparências</a></li>
+            <li><a href="#">Seja Colaborador</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- BANNER --> 
+    <section class="banner">
+        <h1>“Dando <span>asas</span> a quem quer voar”</h1>
+        <a href="#">Saiba Mais</a>
+    </section>
+
+    <!-- JAVASCRIPT --> 
+    <script src="../script.js"></script>
+</body>

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: #252525;
+}
+
+html {
+    height: 500vh;
+}
+
+.menu-lista-2, .menu {
+    display: none;
+}
+
+/* -- Header -- */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 225px;
+    margin-bottom: 5px;
+}
+
+header {
+    width: 100%;
+    padding: 15px 4%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    background-color: #43C05F;
+
+}
+
+header ul {
+    list-style-type: none;
+
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+header ul li a {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-weight: 300;
+
+    text-decoration: none;
+}
+
+
+/* -- Responsividade -- */
+
+@media (max-width: 1000px) {
+
+
+    /* -- Header -- */
+    header {
+        background-color: #25252577;
+        backdrop-filter: blur(2px);
+    }
+
+    .flex {
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu-lista-1 {
+        display: none;
+    }
+
+    .mobile-menu {
+        background-color: #43C05F;
+
+    }
+
+    .menu-lista-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+        width: 100%;
+        background-color: transparent;
+        background-color: #25252577;
+        backdrop-filter: blur(2px);
+
+        position: fixed;
+        top: 92px;
+        left: 0;
+
+        list-style: none;
+    }
+
+    ul.rolagem {
+        background-color: #43C05F;
+        transition: 0.5s;
+    }
+    
+    .menu-lista-2 li a{
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .open {  /* responsavel por ativar e dasativar o .mobile-menu */
+        display: block;
+    }
+
+    /* -- Banner -- */
+    .banner h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /* -- Banner -- */
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner a {
+        padding: 9px 30px;
+        font-size: 14px;
+    }
+
+    .banner {
+        background-image: url(../img/bannerHome4.jpg);
+    }
+    
+
+}
+
+@media (max-width: 450px) {
+
+    /* -- Banner -- */
+    .banner {
+        background-image: url(../img/bannerHome5.jpg);
+    }
+
+    .banner h1 {
+        font-size: 24px;
+    }
+}
+
